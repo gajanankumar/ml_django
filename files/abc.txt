@@ -2,8 +2,8 @@
 aa gg       pullconflictchangesto remote file
 
 
-<<<<<<< HEAD
+
 bb  gajanan patil
-=======
-bb  gajanan kale
->>>>>>> fd85019b1483c099b33d7ee9d5d90c0668adff2c
+
+rc  gajanan kale
+
