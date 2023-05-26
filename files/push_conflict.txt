@@ -1,0 +1,36 @@
+$ git push
+To https://github.com/gajanankumar/ml_django.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/gajanankumar/ml_django.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (main)
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 707 bytes | 28.00 KiB/s, done.
+From https://github.com/gajanankumar/ml_django
+   e723ecf..62da7e3  main       -> origin/main
+Auto-merging files/abc.txt
+CONFLICT (content): Merge conflict in files/abc.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+result after pull to resolve push conflict
+
+<<<<<<< HEAD
+aa gg
+=======
+aa        kk
+>>>>>>> 62da7e39f5b22f0ea5023c6f2164d17e3c836431
+
+bb
+
+
+merge code manually and push again.
