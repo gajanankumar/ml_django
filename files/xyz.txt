@@ -1,0 +1,68 @@
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn
+$ git init
+Initialized empty Git repository in C:/Data/git/gitn/.git/
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (master)
+$ git add .
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   files/abc.txt
+
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (master)
+$ git commit -m "ic"
+[master (root-commit) 9512133] ic
+ 1 file changed, 1 insertion(+)
+ create mode 100644 files/abc.txt
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (master)
+$ git branch -M main
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (main)
+$ git remote add origin https://github.com/gajanankumar/ml_django.git
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (main)
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 248 bytes | 62.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/gajanankumar/ml_django.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (main)
+$ git pull origin main
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 673 bytes | 25.00 KiB/s, done.
+From https://github.com/gajanankumar/ml_django
+ * branch            main       -> FETCH_HEAD
+   9512133..3cc4a07  main       -> origin/main
+Updating 9512133..3cc4a07
+Fast-forward
+ files/abc.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
