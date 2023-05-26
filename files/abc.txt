@@ -3,7 +3,7 @@ aa gg       pullconflictchangesto remote file
 
 
 
-bb  gajanan patil
+rc1  gajanan patil
 
 rc  gajanan kale
 
