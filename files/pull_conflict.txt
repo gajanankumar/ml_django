@@ -11,3 +11,88 @@ $ git pull
 Auto-merging files/abc.txt
 CONFLICT (content): Merge conflict in files/abc.txt
 Automatic merge failed; fix conflicts and then commit the result.
+
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main)
+$ git push
+To https://github.com/gajanankumar/ml_django.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/gajanankumar/ml_django.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main)
+$ git pull
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), 1.60 KiB | 34.00 KiB/s, done.
+From https://github.com/gajanankumar/ml_django
+   728c3d5..136c93d  main       -> origin/main
+Auto-merging files/abc.txt
+CONFLICT (content): Merge conflict in files/abc.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main|MERGING)
+$ git pull
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main|MERGING)
+$ git add .
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main|MERGING)
+$ git cpmmit -m "resoved_pul_conflict"
+git: 'cpmmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main|MERGING)
+$ git pull
+error: You have not concluded your merge (MERGE_HEAD exists).
+hint: Please, commit your changes before merging.
+fatal: Exiting because of unfinished merge.
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main|MERGING)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   abc.txt
+
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main|MERGING)
+$ git commit -m "pillresilve"
+[main dcf0449] pillresilve
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main)
+$ git pull
+Already up to date.
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main)
+$ git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 824 bytes | 103.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/gajanankumar/ml_django.git
+   136c93d..dcf0449  main -> main
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main)
+$
