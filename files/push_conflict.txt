@@ -21,6 +21,24 @@ Auto-merging files/abc.txt
 CONFLICT (content): Merge conflict in files/abc.txt
 Automatic merge failed; fix conflicts and then commit the result.
 
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (main|MERGING)
+$ git add .
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (main|MERGING)
+$ git commit -m "pushconflict"
+[main bf7c4db] pushconflict
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn (main)
+$ git push
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 1.33 KiB | 170.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/gajanankumar/ml_django.git
+   62da7e3..bf7c4db  main -> main
+
 
 result after pull to resolve push conflict
 
