@@ -1,0 +1,13 @@
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main)
+$ git add .
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main)
+$ git commit -m "pullconflict"
+[main 6976370] pullconflict
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Lenovo@DESKTOP-3C3L576 MINGW64 /c/Data/git/gitn/files (main)
+$ git pull
+Auto-merging files/abc.txt
+CONFLICT (content): Merge conflict in files/abc.txt
+Automatic merge failed; fix conflicts and then commit the result.
